@@ -12,15 +12,27 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'faraday'
+gem 'figaro'
+gem 'factory_bot_rails'
+gem 'faker'
+gem 'active_model_serializers'
 
 group :development, :test do
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry'
   gem 'awesome_print'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'shoulda-matchers'
+  gem 'webmock'
+  gem 'simplecov'
+  gem 'vcr'
 end
 
 group :test do
-  gem 'rspec-rails'
-  gem 'capybara'
+  # gem 'rspec-rails'
+  # gem 'capybara'
 end
 
 group :development do
