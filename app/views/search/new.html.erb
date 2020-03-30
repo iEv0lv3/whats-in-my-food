@@ -1,1 +1,11 @@
-<h1>Hello</h1>
+<h1>Total Items: <%= @response.total_foods %></h1>
+<section class ="foods">
+  <% @response.foods.each do |food| %>
+    <ul class="a_food">
+      <li><%= food.description %></li>
+      <li><%= food.upc %></li>
+      <li><%= food.owner %></li>
+      <li><%= food.ingredients %></li>
+    </ul>
+  <% end %>
+</section>
